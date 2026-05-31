@@ -239,7 +239,7 @@
               <span class="company">Centurion University of Technology and Management, Odisha</span>
             </div>
             <div class="resume-card-meta">
-              <span class="date">2018 – 2022</span>
+              <span class="date">2018 - 2022</span>
               <span class="location">CGPA: 7.33</span>
             </div>
           </div>
@@ -317,4 +317,12 @@
     tabBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         tabBtns.forEach(b => b.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active
+        tabContents.forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
