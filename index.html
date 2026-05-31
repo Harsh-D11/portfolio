@@ -6,27 +6,28 @@
   <title>Harsh Doharey | DevOps & Prompt Engineer</title>
   <meta name="description" content="Portfolio of Harsh Doharey — DevOps Engineer and Prompt Engineer." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  //fonts.googleapis.com">
+  //fonts.gstatic.com" crossorigin>
+  //fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/sections.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
+  /css/style.css" />
+  /css/sections.css" />
+  /css/responsive.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- ── HEADER ── -->
   <header class="site-header">
     <div class="container navbar">
       <a href="#hero" class="brand">HaᴙsH</a>
 
       <nav class="nav" id="nav">
-        <a href="#about"> About</a>
-        <a href="#projects"> Projects</a>
-        <a href="#skills"> Skills</a>
-        <a href="#contact"> Contact</a>
-        <a href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">Resume</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="./resume.html" class="resume-link">Resume</a>
       </nav>
 
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
@@ -34,8 +35,11 @@
   </header>
 
   <main id="main">
+
+    <!-- ── HERO ── -->
     <section class="hero" id="hero">
       <div class="container hero-grid">
+
         <div class="terminal-card">
           <div class="terminal-topbar">
             <span class="dot red"></span>
@@ -45,22 +49,24 @@
           </div>
 
           <div class="terminal-body">
-            <p><span class="prompt">~$</span> who_am_i</p>
+            <p><span class="prompt">~$</span> <span class="cmd">whoami</span></p>
             <p class="output">Harsh Doharey</p>
 
-            <p><span class="prompt">~$</span> role.txt</p>
-            <p class="output" id="typewriter">DevOps Engineer · Prompt Engineer</p>
+            <p><span class="prompt">~$</span> <span class="cmd">cat role.txt</span></p>
+            <p class="output" id="typewriter"></p>
 
-            <p><span class="prompt">~$</span> intro.txt</p>
+            <p><span class="prompt">~$</span> <span class="cmd">cat intro.txt</span></p>
             <p class="output soft">
-              I build cloud-ready systems, automate workflows, and create prompt-driven AI products that are practical, scalable, and useful.
+              I build cloud-ready systems, automate workflows, and create
+              prompt-driven AI products that are practical, scalable, and useful.
             </p>
 
-            <p><span class="prompt">~$</span> ls contacts/</p>
+            <p><span class="prompt">~$</span> <span class="cmd">ls contacts/</span></p>
             <div class="terminal-links">
               <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">github</a>
               <a href="https://www.linkedin.com/in/harsh--doharey/" target="_blank" rel="noopener noreferrer">linkedin</a>
               <a href="mailto:bennyharsh@gmail.com">gmail</a>
+              <a href="./resume.html">resume</a>
             </div>
           </div>
         </div>
@@ -68,30 +74,35 @@
         <aside class="stats-card">
           <p class="card-label">STATS.EXE</p>
           <ul>
-            <li><span>Class</span><strong>DevOps Engineer</strong></li>
-            <li><span>Spec</span><strong>Prompt Engineer</strong></li>
-            <li><span>Location</span><strong>Hyderabad, IN</strong></li>
-            <li><span>Status</span><strong class="accent">Open to work</strong></li>
-            <li><span>Core</span><strong>Python · FastAPI · Docker</strong></li>
-            <li><span>Learning</span><strong>AWS · K8s · Jenkins</strong></li>
+            ><span>Class</span><strong>DevOps Engineer</strong></li>
+            ><span>Spec</span><strong>Prompt Engineer</strong></li>
+            ><span>Location</span><strong>Hyderabad, IN</strong></li>
+            ><span>Status</span><strong class="accent">Open to work</strong></li>
+            ><span>Core</span><strong>Python · FastAPI · Docker</strong></li>
+            ><span>Learning</span><strong>AWS · K8s · Jenkins</strong></li>
           </ul>
         </aside>
+
       </div>
     </section>
 
+    <!-- ── ABOUT ── -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-head">
-          <span class="section-no"></span>
+          <span class="section-no">01</span>
           <h2>about_me.txt</h2>
         </div>
         <div class="about-grid">
           <div>
             <p>
-              I’m a developer focused on DevOps, backend systems, and prompt engineering. I enjoy building projects that are not just functional, but deployable and maintainable.
+              I'm a developer focused on DevOps, backend systems, and prompt
+              engineering. I enjoy building projects that are not just functional,
+              but deployable and maintainable.
             </p>
             <p>
-              My goal is to design systems that automate work, reduce friction, and make AI actually useful in products.
+              My goal is to design systems that automate work, reduce friction,
+              and make AI actually useful in products — not just impressive in demos.
             </p>
             <div class="tags">
               <span>DevOps</span>
@@ -99,129 +110,191 @@
               <span>FastAPI</span>
               <span>Docker</span>
               <span>Cloud</span>
+              <span>Python</span>
+              <span>CI/CD</span>
             </div>
           </div>
-         
         </div>
       </div>
     </section>
 
+    <!-- ── PROJECTS ── -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-head">
-          <span class="section-no"></span>
+          <span class="section-no">02</span>
           <h2>things_ive_built.sh</h2>
         </div>
 
         <div class="projects-grid">
+
           <article class="project-card">
-            <span class="project-index"></span>
+            <div class="card-corner tl"></div>
+            <div class="card-corner br"></div>
+            <span class="project-index">01</span>
             <h3>CreatorOS</h3>
-            <p>AI content workflow platform for ideas, visual references, and structured generation.</p>
+            <p>AI content workflow platform for ideas, visual references, and structured generation pipelines.</p>
             <div class="tags small">
               <span>FastAPI</span>
               <span>Prompting</span>
               <span>LLM APIs</span>
+              <span>Python</span>
             </div>
             <div class="project-links">
-              <a href="#">GitHub</a>
-              <a href="#">Live</a>
+              <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="#">Live ↗</a>
             </div>
           </article>
 
           <article class="project-card">
-            <span class="project-index"></span>
+            <div class="card-corner tl"></div>
+            <div class="card-corner br"></div>
+            <span class="project-index">02</span>
             <h3>Desk AI</h3>
-            <p>AI-powered productivity workspace built to turn repetitive workflows into smart actions.</p>
+            <p>AI-powered productivity workspace built to turn repetitive workflows into smart, automated actions.</p>
             <div class="tags small">
               <span>JavaScript</span>
               <span>Automation</span>
               <span>AI</span>
+              <span>Groq</span>
             </div>
             <div class="project-links">
-              <a href="#">GitHub</a>
-              <a href="#">Live</a>
+              <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="#">Live ↗</a>
             </div>
           </article>
 
           <article class="project-card">
-            <span class="project-index"></span>
+            <div class="card-corner tl"></div>
+            <div class="card-corner br"></div>
+            <span class="project-index">03</span>
             <h3>Backend API Suite</h3>
             <p>Production-style APIs with auth, payments, database integration, and deployment-ready structure.</p>
             <div class="tags small">
               <span>FastAPI</span>
               <span>JWT</span>
               <span>Docker</span>
+              <span>SQLAlchemy</span>
             </div>
             <div class="project-links">
-              <a href="#">GitHub</a>
+              <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- ── SKILLS ── -->
     <section class="section" id="skills">
       <div class="container">
         <div class="section-head">
-          <span class="section-no"></span>
+          <span class="section-no">03</span>
           <h2>skill_tree.exe</h2>
         </div>
 
         <div class="skills-grid">
+
           <div class="skill-group">
-            <h3>DevOps & Cloud</h3>
+            <h3>DevOps &amp; Cloud</h3>
             <div class="skill-row" data-level="75">
-              <span>Docker</span><div class="bar"><div class="fill"></div></div><b>75%</b>
+              <span>Docker</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>75%</b>
             </div>
             <div class="skill-row" data-level="60">
-              <span>CI/CD</span><div class="bar"><div class="fill"></div></div><b>60%</b>
+              <span>CI/CD</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>60%</b>
             </div>
             <div class="skill-row" data-level="50">
-              <span>AWS</span><div class="bar"><div class="fill"></div></div><b>50%</b>
+              <span>AWS</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>50%</b>
+            </div>
+            <div class="skill-row" data-level="55">
+              <span>Linux</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>55%</b>
             </div>
           </div>
 
           <div class="skill-group">
-            <h3>Prompt & Backend</h3>
+            <h3>Prompt &amp; Backend</h3>
             <div class="skill-row" data-level="85">
-              <span>Prompt Design</span><div class="bar"><div class="fill"></div></div><b>85%</b>
+              <span>Prompt Design</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>85%</b>
             </div>
             <div class="skill-row" data-level="80">
-              <span>FastAPI</span><div class="bar"><div class="fill"></div></div><b>80%</b>
+              <span>FastAPI</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>80%</b>
+            </div>
+            <div class="skill-row" data-level="75">
+              <span>Python</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>75%</b>
             </div>
             <div class="skill-row" data-level="70">
-              <span>API Integration</span><div class="bar"><div class="fill"></div></div><b>70%</b>
+              <span>API Integration</span>
+              <div class="bar"><div class="fill"></div></div>
+              <b>70%</b>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── CONTACT ── -->
     <section class="section" id="contact">
       <div class="container">
         <div class="section-head">
-          <span class="section-no"></span>
+          <span class="section-no">04</span>
           <h2>lets_connect.sh</h2>
         </div>
 
         <div class="contact-box">
-          <p class="contact-text">Open to DevOps roles, backend roles, freelance work, and AI-product collaborations.</p>
+          <p class="contact-text">
+            Open to DevOps roles, backend roles, freelance work,
+            and AI-product collaborations. Let's build something.
+          </p>
           <div class="contact-links-grid">
-            <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/harsh--doharey/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:bennyharsh@gmail.com">Gmail</a>
-            <a href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">
+              <span class="link-label">GitHub</span>
+              <span class="link-arrow">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/harsh--doharey/" target="_blank" rel="noopener noreferrer">
+              <span class="link-label">LinkedIn</span>
+              <span class="link-arrow">↗</span>
+            </a>
+            <a href="mailto:bennyharsh@gmail.com">
+              <span class="link-label">Gmail</span>
+              <span class="link-arrow">↗</span>
+            </a>
+            <a href="./resume.html">
+              <span class="link-label">Resume</span>
+              <span class="link-arrow">↗</span>
+            </a>
           </div>
         </div>
+
       </div>
     </section>
+
   </main>
 
+  <!-- ── FOOTER ── -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>harsh@portfolio:~$</span>
-      <span>Built for Vercel</span>
+      <span class="footer-brand">HaᴙsH</span>
+      <div class="footer-links">
+        <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/harsh--doharey/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:bennyharsh@gmail.com">Gmail</a>
+      </div>
+      <span class="footer-copy">© 2026 Harsh Doharey</span>
     </div>
   </footer>
 
