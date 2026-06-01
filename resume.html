@@ -15,314 +15,102 @@
 </head>
 <body>
 
-  <!-- ── HEADER ── -->
-  <header class="site-header">
-    <div class="container navbar">
-      <a href="./index.html" class="brand">HaᴙsH</a>
-      <nav class="nav" id="nav">
-        <a href="./index.html#about">About</a>
-        <a href="./index.html#projects">Projects</a>
-        <a href="./index.html#skills">Skills</a>
-        <a href="./index.html#contact">Contact</a>
-        <a href="./resume.html" class="resume-link active">Resume</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
-    </div>
+   <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="./index.html" class="logo">HaяsH</a>
+    <nav>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#projects">Projects</a>
+      <a href="./index.html#skills">Skills</a>
+      <a href="./index.html#contact">Contact</a>
+      <a href="./resume.html" class="btn-resume active">Resume</a>
+    </nav>
   </header>
 
-  <main class="resume-main">
-    <div class="container">
-
-      <!-- ── RESUME HEADER ── -->
-      <div class="resume-header">
-        <div class="resume-header-left">
-          <p class="resume-eyebrow">&gt; RESUME_DATA.EXE</p>
-          <h1>Harsh Doharey</h1>
-          <p class="resume-tagline">
-            DevOps Engineer &nbsp;·&nbsp; Prompt Engineer &nbsp;·&nbsp; Hyderabad, IN
-          </p>
-          <div class="resume-contacts">
-            <a href="mailto:bennyharsh@gmail.com">bennyharsh@gmail.com</a>
-            <a href="https://www.linkedin.com/in/harsh--doharey/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="resume-header-right">
-          <a href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer" class="download-btn">
-            Download PDF ↓
-          </a>
-        </div>
+  <!-- RESUME CONTENT -->
+  <main class="resume-container">
+    <div class="resume-header-block">
+      <p class="resume-exe">&gt; RESUME_DATA.EXE</p>
+      <h1>Harsh Doharey</h1>
+      <p class="resume-meta">DevOps Engineer &middot; Prompt Engineer &middot; Hyderabad, IN</p>
+      <div class="resume-links">
+        <a href="mailto:bennyharsh@gmail.com">bennyharsh@gmail.com</a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn &nearr;</a>
+        <a href="https://github.com/your-github" target="_blank">GitHub &nearr;</a>
+        <a href="./assets/resume.pdf" download class="download-btn">Download PDF &darr;</a>
       </div>
 
-      <!-- ── TABS ── -->
-      <div class="resume-tabs">
-        <button class="tab-btn active" data-tab="experience">&gt; Experience</button>
-        <button class="tab-btn" data-tab="projects">&gt; Projects</button>
-        <button class="tab-btn" data-tab="skills">&gt; Skills</button>
-        <button class="tab-btn" data-tab="education">&gt; Education</button>
+      <!-- JUMP LINKS -->
+      <div class="resume-jumps">
+        <a href="#experience">&gt; Experience</a>
+        <a href="#projects-r">&gt; Projects</a>
+        <a href="#skills-r">&gt; Skills</a>
+        <a href="#education">&gt; Education</a>
       </div>
-
-      <!-- ── EXPERIENCE ── -->
-      <div class="tab-content active" id="tab-experience">
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>Prompt Engineer &amp; AI Content Creator</h3>
-              <span class="company">Self-Employed</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">2025 – Present</span>
-              <span class="location">Hyderabad, IN</span>
-            </div>
-          </div>
-          <ul>
-            >Designed and optimized prompts for multiple LLMs — ChatGPT, Claude, Perplexity, Gemini — achieving 85% quality output consistency</li>
-            >Engineered end-to-end YouTube automation pipeline with AI-generated scripts, voiceovers, and video descriptions</li>
-            >Created prompt-driven e-commerce content generation system producing product descriptions, marketing copy, and SEO content at scale</li>
-            >Built AI-powered gesture control application using MediaPipe demonstrating applied AI/ML integration</li>
-          </ul>
-        </div>
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>Content Moderator</h3>
-              <span class="company">Genpact</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">Mar 2024 – Jun 2025</span>
-              <span class="location">Hyderabad, IN</span>
-            </div>
-          </div>
-          <ul>
-            >Reviewed AI-generated and user-generated content at scale, developing expertise in identifying AI patterns and misinformation</li>
-            >Collaborated with AI safety and policy teams to develop content moderation guidelines for AI-generated content</li>
-            >Gained deep understanding of LLM outputs, content safety practices, and real-world AI limitations in production</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- ── PROJECTS ── -->
-      <div class="tab-content" id="tab-projects">
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>CreatorOS</h3>
-              <span class="company">AI Content Workflow Platform</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">2025 – Present</span>
-            </div>
-          </div>
-          <ul>
-            >Built AI content workflow for idea generation, visual references, and structured storyboarding</li>
-            >Integrated Groq, Gemini, and Unsplash APIs for automated content pipelines</li>
-            >Designed prompt versioning and A/B testing framework to optimize AI output quality</li>
-          </ul>
-          <div class="resume-card-tags">
-            <span>FastAPI</span><span>Python</span><span>Groq</span><span>Gemini</span><span>Unsplash API</span>
-          </div>
-        </div>
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>YouTube Automation Channel</h3>
-              <span class="company">AI-Powered Content Pipeline</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">2025</span>
-            </div>
-          </div>
-          <ul>
-            >Architected complete YouTube content workflow using ChatGPT for scriptwriting and Claude for SEO</li>
-            >Engineered prompts for thumbnail generation using DALL-E and video description optimization</li>
-            >Automated content calendar management and analytics reporting using Python scripts and API integrations</li>
-          </ul>
-          <div class="resume-card-tags">
-            <span>ChatGPT</span><span>Claude AI</span><span>DALL-E</span><span>Python</span><span>YouTube API</span>
-          </div>
-        </div>
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>Gesture Control System</h3>
-              <span class="company">AI/ML Integration</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">2024</span>
-            </div>
-          </div>
-          <ul>
-            >Applied computer vision using MediaPipe for real-time gesture recognition and system control</li>
-            >Engineered system prompts and feedback mechanisms for optimal gesture detection accuracy</li>
-          </ul>
-          <div class="resume-card-tags">
-            <span>Python</span><span>MediaPipe</span><span>OpenCV</span><span>AI/ML</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ── SKILLS ── -->
-      <div class="tab-content" id="tab-skills">
-
-        <div class="skills-blocks">
-
-          <div class="resume-card">
-            <div class="card-corner tl"></div>
-            <div class="card-corner br"></div>
-            <h3>LLM &amp; Prompt Engineering</h3>
-            <div class="skill-tags">
-              <span>ChatGPT</span><span>Claude AI</span><span>Perplexity AI</span>
-              <span>Gemini</span><span>Prompt Optimization</span><span>LLM Fine-tuning</span>
-            </div>
-          </div>
-
-          <div class="resume-card">
-            <div class="card-corner tl"></div>
-            <div class="card-corner br"></div>
-            <h3>DevOps &amp; Automation</h3>
-            <div class="skill-tags">
-              <span>Docker</span><span>Ansible</span><span>Jenkins</span>
-              <span>Git</span><span>Linux</span><span>CI/CD</span><span>API Integration</span>
-            </div>
-          </div>
-
-          <div class="resume-card">
-            <div class="card-corner tl"></div>
-            <div class="card-corner br"></div>
-            <h3>Programming &amp; Backend</h3>
-            <div class="skill-tags">
-              <span>Python</span><span>JavaScript</span><span>FastAPI</span>
-              <span>Flask</span><span>SQL</span><span>SQLAlchemy</span><span>HTML/CSS</span>
-            </div>
-          </div>
-
-          <div class="resume-card">
-            <div class="card-corner tl"></div>
-            <div class="card-corner br"></div>
-            <h3>AI Content Tools</h3>
-            <div class="skill-tags">
-              <span>DALL-E</span><span>Midjourney</span><span>ElevenLabs</span>
-              <span>Runway ML</span><span>Canva AI</span><span>Synthesia</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- ── EDUCATION ── -->
-      <div class="tab-content" id="tab-education">
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>B.Tech — Computer Science Engineering</h3>
-              <span class="company">Centurion University of Technology and Management, Odisha</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">2018 - 2022</span>
-              <span class="location">CGPA: 7.33</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>DevOps and Cloud Computing</h3>
-              <span class="company">PW Skills — Physics Wallah</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">Feb 2026</span>
-              <span class="location">Certification</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>DSA with C</h3>
-              <span class="company">PW Skills — Physics Wallah</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">Nov 2025</span>
-              <span class="location">Certification</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="resume-card">
-          <div class="card-corner tl"></div>
-          <div class="card-corner br"></div>
-          <div class="resume-card-head">
-            <div>
-              <h3>Android Development Technology</h3>
-              <span class="company">PIE InfoCOMM</span>
-            </div>
-            <div class="resume-card-meta">
-              <span class="date">2022</span>
-              <span class="location">Internship</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </main>
 
-  <!-- ── FOOTER ── -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="footer-brand">HaᴙsH</span>
-      <div class="footer-links">
-        <a href="https://github.com/Harsh-D11" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/harsh--doharey/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:bennyharsh@gmail.com">Gmail</a>
+    <!-- EXPERIENCE -->
+    <section class="resume-section" id="experience">
+      <h2>Experience</h2>
+
+      <div class="resume-entry">
+        <h3>Prompt Engineer &amp; AI Content Creator</h3>
+        <p class="entry-meta">Self-Employed &bull; 2025 &ndash; Present &bull; Hyderabad, IN</p>
+        <ul>
+          >Designed and optimized prompts for multiple LLMs — ChatGPT, Claude, Perplexity, Gemini — achieving 85% quality output consistency</li>
+          >Engineered end-to-end YouTube automation pipeline with AI-generated scripts, voiceovers, and video descriptions</li>
+          >Created prompt-driven e-commerce content generation system producing product descriptions, marketing copy, and SEO content at scale</li>
+          >Built AI-powered gesture control application using MediaPipe demonstrating applied AI/ML integration</li>
+        </ul>
       </div>
-      <span class="footer-copy">© 2026 Harsh Doharey</span>
-    </div>
-  </footer>
 
-  <script src="./js/main.js"></script>
-  <script>
-    // Tab switcher
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+      <div class="resume-entry">
+        <h3>Content Moderator</h3>
+        <p class="entry-meta">Genpact &bull; Mar 2024 &ndash; Jun 2025 &bull; Hyderabad, IN</p>
+        <ul>
+          >Reviewed AI-generated and user-generated content at scale, developing expertise in identifying AI patterns and misinformation</li>
+          >Collaborated with AI safety and policy teams to develop content moderation guidelines for AI-generated content</li>
+          >Gained deep understanding of LLM outputs, content safety practices, and real-world AI limitations in production</li>
+        </ul>
+      </div>
+    </section>
 
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        tabBtns.forEach(b => b.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-      });
-    });
-  </script>
+    <!-- PROJECTS -->
+    <section class="resume-section" id="projects-r">
+      <h2>Projects</h2>
 
-</body>
-</html>
+      <div class="resume-entry">
+        <h3>CreatorOS <span class="entry-type">AI Content Workflow Platform</span></h3>
+        <p class="entry-meta">2025 &ndash; Present</p>
+        <ul>
+          >Built an automated pipeline for content creation integrating Gemini API, voiceover generation, and social media scheduling</li>
+          >Designed FastAPI backend with modular routes for idea generation, script creation, and publishing workflows</li>
+        </ul>
+      </div>
+
+      <div class="resume-entry">
+        <h3>Gesture Control App <span class="entry-type">AI/ML Application</span></h3>
+        <p class="entry-meta">2024</p>
+        <ul>
+          >Built hands-free gesture recognition system using MediaPipe and OpenCV in Python</li>
+          >Demonstrated real-world AI/ML integration for productivity and accessibility use cases</li>
+        </ul>
+      </div>
+
+      <div class="resume-entry">
+        <h3>Desk AI <span class="entry-type">AI Productivity Tool</span></h3>
+        <p class="entry-meta">2024 &ndash; Present</p>
+        <ul>
+          >Developed AI-powered task and content assistant using Groq API and FastAPI backend</li>
+          >Implemented JWT authentication and persistent SQLAlchemy database for user sessions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="resume-section" id="skills-r">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div>
+          <h4>DevOps &amp; Cloud</h4>
+          <p>Docker, AWS, Kubernetes, Jenkins, GitHub Actions, CI/CD
