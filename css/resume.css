@@ -295,3 +295,21 @@
     padding: 0.4rem 0.75rem;
   }
 }
+.resume-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.2rem;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.resume-contact-row a {
+  color: var(--accent, #00e0b8);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.resume-contact-row a:hover {
+  border-color: currentColor;
+}
